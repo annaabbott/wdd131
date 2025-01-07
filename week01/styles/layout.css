@@ -25,6 +25,11 @@ li {
   list-style-type: none;
 }
 
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
 main {
   grid-column: 1/4;
   background-color: #b7b7b7;

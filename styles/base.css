@@ -64,9 +64,13 @@ nav ul {
   grid-column: 3/4;
 }
 
-#about img {
+#about img.profile {
   float: right;
   margin-left: 1rem;
+}
+
+.river {
+  float: left;
 }
 
 ul {

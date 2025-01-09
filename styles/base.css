@@ -29,7 +29,7 @@ header nav {
   background-color: var(--secondary-color);
 }
 
-header nav li:hover {
+header nav a:hover {
   text-decoration: underline;
 }
 
@@ -37,7 +37,7 @@ main {
   margin: 50px auto;
   display: grid;
   grid-template: auto / 1fr 1fr 1fr;
-  width: 60rem;
+  max-width: 60rem;
 }
 
 nav ul {

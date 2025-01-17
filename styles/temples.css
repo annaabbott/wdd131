@@ -1,0 +1,12 @@
+* {
+  --primary-color: #99af6b;
+  --secondary-color: #e7d788;
+  --accent-color: #f3eda8;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

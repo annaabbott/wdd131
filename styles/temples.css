@@ -2,11 +2,110 @@
   --primary-color: #99af6b;
   --secondary-color: #e7d788;
   --accent-color: #f3eda8;
+  --text-color: #101010;
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
+  margin: 0 auto;
   font-family: "Roboto", serif;
   font-weight: 400;
   font-style: normal;
-  font-variation-settings: "wdth" 100;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  position: relative;
+  background-color: var(--accent-color);
+}
+
+nav {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: var(--accent-color);
+  padding: 0.5rem;
+  height: 100vh;
+
+  display: none;
+}
+
+nav .hamburger,
+nav .closeBox {
+  cursor: pointer;
+}
+
+nav.visible {
+  display: block;
+}
+
+div.closeBox {
+  font-size: 3rem;
+  position: absolute;
+  top: 0;
+  right: 1.3rem;
+  display: block;
+}
+
+li {
+  list-style-type: none;
+  padding: 0.5rem;
+  font-size: 2rem;
+}
+
+a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--text-color);
+}
+
+a:hover {
+  background-color: var(--secondary-color);
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+main h2 {
+  padding: 25px;
+  width: 100%;
+  text-align: center;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  row-gap: 15px;
+  place-items: center;
+}
+
+figure {
+  background-color: var(--primary-color);
+}
+
+figcaption {
+  background-color: var(--primary-color);
+  padding: 0.25rem;
+}
+
+img {
+  max-width: 100%;
+  width: auto;
+}
+
+footer {
+  text-align: center;
+  background-color: var(--accent-color);
 }

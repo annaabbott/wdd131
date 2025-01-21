@@ -1,0 +1,9 @@
+* {
+  box-sizing: border-box;
+}
+
+.hero {
+  width: 100vw;
+  height: auto;
+  aspect-ratio: 2/1;
+}

@@ -22,55 +22,62 @@
   <body>
     <header>
       <h1>Texas</h1>
-      <img
-        src="images/bluebonnets-cropped.webp"
-        alt="Texas Bluebonnets"
-        class="hero"
-      />
+      <picture class="hero">
+        <source
+          srcset="images/texas-sky-cropped.webp"
+          media="(min-width: 800px)"
+        />
+        <img srcset="images/bluebonnets-cropped.webp" alt="Texas Bluebonnets" />
+      </picture>
     </header>
     <main>
-      <h2>Data</h2>
-      <table>
-        <tr>
-          <th scope="row">Area:</th>
-          <td>268,596 square miles</td>
-        </tr>
-        <tr>
-          <th scope="row">Population (2024):</th>
-          <td>31,290,860</td>
-        </tr>
-        <tr>
-          <th scope="row">Capitol:</th>
-          <td>Austin</td>
-        </tr>
-        <tr>
-          <th scope="row">Languages Spoken:</th>
-          <td>English (65%), Spanish (30%)</td>
-        </tr>
-        <tr>
-          <th scope="row">Time Zone:</th>
-          <td>Central Standard Time</td>
-        </tr>
-      </table>
-      <h2>Austin Weather</h2>
-<table>
-    <tr>
-        <th scope="row">Temperature:</th>
-        <td>35° F</td>
-    </tr>
-    <tr>
-        <th scope="row">Conditions:</th>
-        <td>Sunny</td>
-    </tr>
-    <tr>
-        <th scope="row">Wind:</th>
-        <td>8 mph</td>
-    </tr>
-    <tr>
-        <th scope="row">Wind Chill:</th>
-        <td id="windChill">tbd</td>
-    </tr>
-</table>
+      <div class="data">
+        <h2>Data</h2>
+        <table>
+          <tr>
+            <th scope="row">Area:</th>
+            <td>268,596 sq. miles</td>
+          </tr>
+          <tr>
+            <th scope="row">Population (2024):</th>
+            <td>31,290,860</td>
+          </tr>
+          <tr>
+            <th scope="row">Capitol:</th>
+            <td>Austin</td>
+          </tr>
+          <tr>
+            <th scope="row">Languages Spoken:</th>
+            <td>English (65%), Spanish (30%)</td>
+          </tr>
+          <tr>
+            <th scope="row">Time Zone:</th>
+            <td>CST</td>
+          </tr>
+        </table>
+      </div>
+      <div class="weather">
+        <h2>Austin Weather <span>☀️</span></h2>
+        <img src="images/weather-icon.svg" class="weather-icon" />
+        <table>
+          <tr>
+            <th scope="row">Temperature:</th>
+            <td>35° F</td>
+          </tr>
+          <tr>
+            <th scope="row">Conditions:</th>
+            <td>Sunny</td>
+          </tr>
+          <tr>
+            <th scope="row">Wind:</th>
+            <td>8 mph</td>
+          </tr>
+          <tr>
+            <th scope="row">Wind Chill:</th>
+            <td id="windChill">tbd</td>
+          </tr>
+        </table>
+      </div>
     </main>
     <footer>
       <p>&copy; <span id="currentyear"> </span> Anna Abbott | Texas, USA</p>

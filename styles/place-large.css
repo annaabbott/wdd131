@@ -18,9 +18,9 @@
     position: relative;
   }
 
-header{
+  header {
     background-color: var(--secondary-color);
-}
+  }
 
   div.data {
     position: absolute;
@@ -58,19 +58,17 @@ header{
     text-align: left;
     padding-left: 1.5rem;
     padding-top: 1.5rem;
-    background-color: ;
   }
 
   span {
     display: inline;
   }
-  
+
   .weather-icon {
     height: 50px;
     margin: 0 auto;
     display: none;
   }
-  
 
   .weather table {
     background-color: white;

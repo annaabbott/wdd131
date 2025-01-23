@@ -19,7 +19,9 @@ function calcWindChill(temp, windSpeed) {
   return roundedWindChill;
 }
 
-document.querySelector("#windChill").textContent = `${calcWindChill(
-  temp,
-  windSpeed
-)} °F`;
+if (temp <= 50 && windSpeed > 3) {
+  document.querySelector("#windChill").textContent = `${calcWindChill(
+    temp,
+    windSpeed
+  )} °F`;
+}

@@ -1,8 +1,7 @@
-* {
+:root {
   --primary-color: #9893d2;
   --secondary-color: #bababf;
   --text-color: #030303;
-  ---complementary-text: #fff;
 
   font-family: "Roboto", serif;
   font-weight: 400;

@@ -46,9 +46,9 @@
     padding-top: 1.5rem;
   }
 
-  span {
-    display: inline;
-  }
+  .weather h2::after{
+    content: "☀️";
+}
 
   .weather-icon {
     height: 50px;

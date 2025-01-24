@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Find the Sheep</title>
+    <meta name="author" content="Anna Abbott" />
+    <meta
+      name="description"
+      content="Created for REL250A, Jesus Christ and His Everlasting Gospel"
+    />
+    <link href="styles/shepherd.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/shepherd.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <h1>Find the Sheep</h1>
+    </header>
+    <main>
+      <p>
+        One of the sheep has strayed from the safety of the pen and is hiding
+        inside one of the colored squares. Click on a square to make it
+        disappear. How many tries does it take to find the sheep?
+      </p>
+      <h2 id="attempts">Attempts: 0</h2>
+      <div class="gameboard">
+        <div class="noSheep grid-item" data-index="0"></div>
+        <div class="noSheep grid-item" data-index="1"></div>
+        <div class="noSheep grid-item" data-index="2"></div>
+        <div class="noSheep grid-item" data-index="3"></div>
+        <div class="noSheep grid-item" data-index="4"></div>
+        <div class="noSheep grid-item" data-index="5"></div>
+      </div>
+      <p class="scripture">
+        What man of you, having an hundred sheep, if he lose one of them, doth
+        not leave the ninety and nine in the wilderness, and go after that which
+        is lost, until he find it?
+      </p>
+      <span class="reference">Luke 15:4</span>
+      <!-- <button id="restartBtn">Restart the Game</button> -->
+    </main>
+    <footer>
+      <p>Picture detail from Gentle Shepherd by Youngsung Kim</p>
+      <p>&copy;2024 Anna Abbott</p>
+      <p></p>
+    </footer>
+  </body>
+</html>

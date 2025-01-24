@@ -1,0 +1,54 @@
+:root{
+    max-width: 1024px;
+    margin-left: 100px;
+}
+
+header h1{
+    margin: 0 auto;
+}
+
+/* main{
+    margin: 0 auto;
+} */
+
+.gameboard{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15px;
+    row-gap: 15px;
+    width: 900px;
+    height: 700px;
+    /* margin: 0 auto; */
+}
+
+.grid-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 250px;
+    width: 250px;
+}
+
+.hidden {display: none;}
+
+.noSheep{
+    border: 1px #000 solid;
+    background-color:#BFC821;
+    padding: 2.5rem;
+}
+
+.scripture{
+    margin-bottom: 0;
+}
+
+.reference{
+    text-align: right;
+   font-style: italic;
+   display: block;
+}
+
+footer{
+    text-align: center;
+    padding: 25px;
+}

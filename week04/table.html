@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables for Data Presentation</title>
+    <meta name="author" content="Anna Abbott" />
+    <meta
+      name="description"
+      content="Created for the WDD 131 class 'Dynamic Web Fundamentals' by Anna Abbott. Demonstrates proficiency in creating HTML tables for the purpose of presenting data, not layout"
+    />
+    <link href="styles/table.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/getdates.js" defer></script>
+  </head>
+  <body>
+    <table>
+      <caption>
+        Table 1: Account Feature Comparison
+      </caption>
+      <thead>
+        <tr>
+          <th colspan="4" scope="colgroup">ACME Wildwest Services</th>
+        </tr>
+        <tr>
+          <th>&nbsp;</th>
+          <th scope="col">Basic</th>
+          <th scope="col">Premium</th>
+          <th scope="col">Deluxe</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Feature 1</th>
+          <td>✔️</td>
+          <td>✔️</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <th scope="row">Feature 2</th>
+          <td>❌</td>
+          <td>✔️</td>
+          <td>✔️</td>
+        </tr>
+        <tr>
+          <th scope="row">Feature 3</th>
+          <td>❌</td>
+          <td>❌</td>
+          <td>✔️</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

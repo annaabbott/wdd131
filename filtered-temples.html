@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Temple Album</title>
+    <meta
+      name="description"
+      content="A picture album page to illustrate competency in media queries and lazy load."
+    />
+    <meta name="author" content="Anna Abbott" />
+    <link href="styles/filtered-temples.css" rel="stylesheet" />
+    <link href="styles/filtered-temples-large.css" rel="stylesheet" />
+    <script src="scripts/filtered-temples.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <h1>Temple Album</h1>
+      <nav class="navContainer">
+        <ul>
+          <li><a href="#" id="menu-home">Home</a></li>
+          <li><a href="#" id="menu-old">Old</a></li>
+          <li><a href="#" id="menu-new">New</a></li>
+          <li><a href="#" id="menu-large">Large</a></li>
+          <li><a href="#" id="menu-small">Small</a></li>
+        </ul>
+        <div class="closeBox">
+          <a href="#"> &times;</a>
+        </div>
+      </nav>
+      <div class="hamburger">
+        <a href="#">
+          <img
+            src="images/bars-solid.svg"
+            width="32"
+            height="32"
+            alt="hamburger menu icon"
+          />
+        </a>
+      </div>
+    </header>
+    <main>
+      <h2>Home</h2>
+      <div class="mainContainer"></div>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"> </span> Anna Abbott | Texas, USA</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

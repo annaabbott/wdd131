@@ -81,4 +81,58 @@ const temples = [
       "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/mexico-city-mexico/400x250/mexico-city-temple-exterior-1518361-wallpaper.jpg",
   },
   // Add more temple objects here...
+  {
+    //temple1
+    templeName: "Madrid Spain Temple",
+    location: "Madrid, Spain",
+    dedicated: "1999, March, 19",
+    area: 45800,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/madrid-spain/400x250/madrid-spain-mormon-temple-902157-wallpaper.jpg",
+  },
+  {
+    //temple2
+    templeName: "Houston Texas Temple",
+    location: "Houston, Texas",
+    dedicated: "2000, August, 26",
+    area: 33970,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/houston-texas/2018/400x250/houston-temple02.jpg",
+  },
+  {
+    //temple3
+    templeName: "Dallas Texas Temple",
+    location: "Dallas, Texas",
+    dedicated: "1984, October, 19",
+    area: 44207,
+    imageUrl:
+      "https://content.churchofjesuschrist.org/templesldsorg/bc/Temples/photo-galleries/dallas-texas/400x250/dallas-temple-lds-1048888-wallpaper.jpg",
+  },
 ];
+
+function createTempleCard(temple) {
+  const mainContainer = document.querySelector("#mainContainer");
+  const card = document.createElement("div");
+  mainContainer.appendChild(card);
+  const templeh2 = document.createElement("h2");
+  templeh2.innerText = temple.templeName;
+  card.appendChild(templeh2);
+  const locationp = document.createElement("p");
+  locationp.innerText = `Location: ${temple.location}`;
+  templeh2.appendChild(locationp);
+  const dedicatedp = document.createElement("p");
+  dedicatedp.innerText = `Dedicated: ${temple.dedicated}`;
+  locationp.appendChild(dedicatedp);
+  const areap = document.createElement("p");
+  areap.innerText = `Size: ${temple.area} square feet`;
+  dedicatedp.appendChild(areap);
+  const templefig = document.createElement("figure")
+  areap.appendChild(templefig);
+  const templeImg = document.createElement("img");
+  templeImg.setAttribute("src", temple.imageUrl);
+  templeImg.setAttribute("alt", temple.templeName);
+  templeImg.setAttribute("loading", "lazy");
+  templefig.appendChild(templeImg);
+}
+
+temples.forEach((temple) => createTempleCard(temple));

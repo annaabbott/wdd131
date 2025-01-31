@@ -83,7 +83,7 @@ main h2 {
   text-align: center;
 }
 
-.mainContainer {
+#mainContainer {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -91,9 +91,9 @@ main h2 {
   place-items: center;
 }
 
-figure {
+/* figure {
   background-color: var(--primary-color);
-}
+} */
 
 figcaption {
   background-color: var(--primary-color);

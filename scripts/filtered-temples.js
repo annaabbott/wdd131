@@ -126,7 +126,7 @@ function createTempleCard(temple) {
   const areap = document.createElement("p");
   areap.innerText = `Size: ${temple.area} square feet`;
   dedicatedp.appendChild(areap);
-  const templefig = document.createElement("figure")
+  const templefig = document.createElement("figure");
   areap.appendChild(templefig);
   const templeImg = document.createElement("img");
   templeImg.setAttribute("src", temple.imageUrl);
@@ -135,4 +135,54 @@ function createTempleCard(temple) {
   templefig.appendChild(templeImg);
 }
 
-temples.forEach((temple) => createTempleCard(temple));
+function showTemples(filterfunc) {
+  const mainContainer = document.querySelector("#mainContainer");
+  mainContainer.innerText = "";
+  temples.filter(filterfunc).forEach((temple) => createTempleCard(temple));
+}
+
+function showAll(temple) {
+  return true;
+}
+
+function showOld(temple) {
+  const yeardedicated = temple.dedicated.substring(0, 4);
+  return yeardedicated <= "1900";
+}
+
+function showNew(temple) {
+  const yeardedicated = temple.dedicated.substring(0, 4);
+  return yeardedicated >= "2000";
+}
+
+function showSmall(temple) {
+  return temple.area <= 10000;
+}
+
+function showLarge(temple) {
+  return temple.area >= 90000;
+}
+
+homeAnchor = document.querySelector("#menu-home");
+oldAnchor = document.querySelector("#menu-old");
+newAnchor = document.querySelector("#menu-new");
+largeAnchor = document.querySelector("#menu-large");
+smallAnchor = document.querySelector("#menu-small");
+
+homeAnchor.addEventListener("click", () => {
+  showTemples(showAll);
+});
+oldAnchor.addEventListener("click", () => {
+  showTemples(showOld);
+});
+newAnchor.addEventListener("click", () => {
+  showTemples(showNew);
+});
+largeAnchor.addEventListener("click", () => {
+  showTemples(showLarge);
+});
+filteredSmall = smallAnchor.addEventListener("click", () => {
+  showTemples(showSmall);
+});
+
+showTemples(showAll);

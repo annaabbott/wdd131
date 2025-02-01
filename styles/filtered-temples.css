@@ -89,20 +89,26 @@ main h2 {
   grid-template-rows: auto;
   row-gap: 15px;
   place-items: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
-/* figure {
-  background-color: var(--primary-color);
-} */
+.card {
+  border: solid 1px var(--text-color);
+  padding: 2rem;
+  height: 30rem;
+}
 
-figcaption {
-  background-color: var(--primary-color);
-  padding: 0.25rem;
+p {
+  font-size: 1rem;
+  
 }
 
 img {
   max-width: 100%;
   width: auto;
+  height: 250px;
+  padding-top: .5rem;
 }
 
 footer {

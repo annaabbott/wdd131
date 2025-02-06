@@ -1,0 +1,10 @@
+* {
+  --primary-color: #72bdef;
+  --secondary-color: #f0BC73;
+  --text-color: #252525;
+  color: var(--text-color);
+  font-family: "Poppins", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}

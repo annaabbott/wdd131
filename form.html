@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Review Form</title>
+    <meta name="author" content="Anna Abbott" />
+    <meta
+      name="description"
+      content="Created for the WDD 131 class 'Dynamic Web Fundamentals' by Anna Abbott. Demonstrates profieciency in good form design."
+    />
+    <link href="styles/form.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="scripts/form.js" defer></script>
+  </head>
+  <body>
+    <header><h1>Product Review</h1></header>
+    <main>
+      <form method="get" action="review.html">
+        <label for="productName"
+          ><span>Product Name*</span>
+          <select id="productName" name="productName" required>
+            <option value="" selected disabled>Select a product</option>
+          </select>
+        </label>
+
+        <fieldset class="star-rating">
+          <legend>Overall Rating</legend>
+          <input
+            type="radio"
+            name="stars"
+            id="star-a"
+            value="5"
+            required
+          />&star; &star; &star; &star; &star;
+          <label for="star-a" class="stars"></label>
+          <input
+            type="radio"
+            name="stars"
+            id="star-b"
+            value="4"
+            required
+          />&star; &star; &star; &star;
+          <label for="star-b" class="stars"></label>
+          <input
+            type="radio"
+            name="stars"
+            id="star-c"
+            value="3"
+            required
+          />&star; &star; &star;
+          <label for="star-c" class="stars"></label>
+          <input
+            type="radio"
+            name="stars"
+            id="star-d"
+            value="2"
+            required
+          />&star; &star;
+          <label for="star-d" class="stars"></label>
+          <input
+            type="radio"
+            name="stars"
+            id="star-e"
+            value="1"
+            required
+          />&star;
+          <label for="star-e" class="stars"></label>
+        </fieldset>
+
+        <label
+          ><span>Date of Installation*</span>
+          <input type="date" id="date" name="date" required />
+        </label>
+
+        <fieldset>
+          <legend>Which features did you find useful in the product?</legend>
+          <input
+            type="checkbox"
+            id="usefulFeatures"
+            name="usefulFeatures"
+            value="Durability"
+          />
+          <label>Durability</label>
+          <input
+            type="checkbox"
+            id="usefulFeatures"
+            name="usefulFeatures"
+            value="Durability"
+          />
+
+          <label>Ease of Use</label>
+          <input
+            type="checkbox"
+            id="usefulFeatures"
+            name="usefulFeatures"
+            value="Durability"
+          />
+
+          <label>Performance</label>
+          <input
+            type="checkbox"
+            id="usefulFeatures"
+            name="usefulFeatures"
+            value="Durability"
+          />
+
+          <label>Design</label>
+        </fieldset>
+        <label
+          ><span>Written Review (optional)</span>
+          <input type="textbox" name="review"
+        /></label>
+        <label
+          ><span>Your Name (optional)</span>
+          <input type="text" name="name" />
+        </label>
+      </form>
+      <button>Post Review</button>
+    </main>
+    <footer>
+      <p>&copy; <span id="currentyear"> </span> Anna Abbott | Texas, USA</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

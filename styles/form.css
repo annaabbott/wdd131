@@ -79,7 +79,7 @@ input[type="checkbox"] {
 }
 
 input[type="text"],
-input[type="textarea"] {
+textarea {
   border: 1px solid #d1d1d1;
   padding: 0.75rem 0;
   width: 100%;

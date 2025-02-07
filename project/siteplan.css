@@ -1,0 +1,97 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
+
+:root {
+  --primary-color: #72bdef;
+  --secondary-color: #f0bc73;
+  --text-color: #252525;
+  color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif !important;
+  margin: 0;
+}
+
+header {
+  background-color: var(--primary-color);
+  width: 100%;
+  padding: 3rem 5rem;
+}
+
+main {
+  padding: 0 5rem;
+}
+
+.type h1 {
+  margin: 0;
+  padding-left: 4rem;
+}
+
+.type h2 {
+  padding-left: 4rem;
+}
+
+.type p {
+  padding-left: 4rem;
+}
+
+.boldExample {
+  font-weight: 700;
+}
+
+.italicExample {
+  font-style: italic;
+}
+
+h1 {
+  font-size: 36px;
+}
+
+h2 {
+  margin: 0;
+  padding-top: 3rem;
+}
+
+h3 {
+  margin: 0;
+  padding-top: 0.5rem;
+}
+
+.color {
+  display: flex;
+}
+
+.color p {
+  padding-left: 1rem;
+}
+
+div {
+  width: 100px;
+  height: auto;
+}
+
+#colorSample1 {
+  background-color: var(--primary-color);
+  text-align: center;
+}
+
+#colorSample2 {
+  background-color: var(--secondary-color);
+  text-align: center;
+}
+
+.wireframe {
+  display: flex;
+  justify-content: space-around;
+}
+
+img {
+  margin: 3rem;
+}

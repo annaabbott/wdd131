@@ -95,3 +95,9 @@ div {
 img {
   margin: 3rem;
 }
+
+footer {
+  text-align: center;
+  background-color: #72bdef;
+  padding: 1.5rem;
+}

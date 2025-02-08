@@ -56,3 +56,9 @@ const selectWarpEqualizer = document.createElement("option");
 productName.appendChild(selectWarpEqualizer);
 selectWarpEqualizer.innerText = products[4].name.charAt(0).toUpperCase()+ products[4].name.slice(1);
 selectWarpEqualizer.setAttribute("value", products[4].name);
+
+const reviewCount = document.querySelector(".reviews");
+let numReviews = Number(window.localStorage.getItem("myReviewCount")) || 0;
+reviewCount.textContent = numReviews;
+numReviews++;
+localStorage.setItem("myReviewCount", reviewCount);

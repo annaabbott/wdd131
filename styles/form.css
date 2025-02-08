@@ -18,6 +18,10 @@ header {
   text-align: center;
 }
 
+p{
+    margin-left: 5rem;
+}
+
 form {
   margin-left: 5rem;
   max-width: 600px;

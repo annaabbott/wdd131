@@ -46,9 +46,9 @@ nav{
 
 .navigation{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
-    padding: 0;
+    padding: 0 2rem;
     }
 
 ul{
@@ -61,6 +61,10 @@ a{
 
 main h1{
     text-align: center;
+}
+
+main p{
+    padding: 0 2rem;
 }
 
 footer {

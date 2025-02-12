@@ -3,7 +3,7 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
 
 :root {
-  --primary-color: #C0F6FD;
+  --primary-color: #c0f6fd;
   --secondary-color: #f0bc73;
   --text-color: #252525;
   font-family: "Poppins", sans-serif;
@@ -30,41 +30,48 @@ header {
   text-align: center;
 }
 
-header h1{
-    margin: 0;
-    padding: 5rem 0 2rem 0;
+header h1 {
+  margin: 0;
+  padding: 5rem 0 2rem 0;
 }
 
-header img{
-    padding-top: 2.5rem;
+header img {
+  padding-top: 2.5rem;
 }
 
-nav{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+nav {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
-.navigation{
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    padding: 0 2rem;
-    }
-
-ul{
-    margin: 0;
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 2rem;
 }
 
-a{
-    text-decoration: none;
+ul {
+  margin: 0;
 }
 
-main h1{
-    text-align: center;
+a {
+  text-decoration: none;
 }
 
-main p{
-    padding: 0 2rem;
+main h1 {
+  text-align: center;
+}
+
+main p {
+  padding: 0 2rem;
+}
+
+.artworkFilter {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  padding: 0 2rem;
 }
 
 footer {

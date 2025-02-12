@@ -16,13 +16,13 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-    <script src="scripts/projectHome.js" defer></script>
+    <script src="scripts/projectPortfolio.js" defer></script>
   </head>
   <body>
     <header>
       <h1>Mariah Petersen</h1>
       <h2>Fine Art and Digital Illustration</h2>
-      <img src="images/profile_pic.webp" alt="Mariah Petersen">
+      <img src="images/profile_pic.webp" alt="Mariah Petersen" />
 
       <nav>
         <ul class="navigation">
@@ -36,7 +36,15 @@
         </ul>
       </nav>
     </header>
-    <main><h1>Mariah's Portfolio</h1></main>
+    <main>
+      <h1>Mariah's Portfolio</h1>
+      <ul class="artworkFilter">
+        <li><a href="#" id="portfolio-all">All</a></li>
+        <li><a href="#" id="portfolio-digital">Digital</a></li>
+        <li><a href="#" id="portfolio-traditional">Traditional</a></li>
+      </ul>
+      <div id="mainContainer"></div>
+    </main>
     <footer>
       <p>&copy; <span id="currentyear"> </span> Anna Abbott | Texas, USA</p>
       <p id="lastModified"></p>

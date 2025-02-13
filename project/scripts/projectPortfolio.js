@@ -6,77 +6,77 @@ const modified = new Date(document.lastModified);
 
 document.getElementById("currentyear").innerHTML = currentYear;
 document.getElementById("lastModified").innerHTML = modified;
-
+//wdd131\project\images\artwork1-resized.png
 const artwork = [
   {
     title: "Orangy",
     medium: "Digital Illustration",
     canvas: "Sticker Paper",
     size: "4x5",
-    imageUrl: "../images/artwork1-resized.jpg",
+    imageUrl: "../project/images/artwork1-resized.png",
   },
   {
     title: "Bride",
     medium: "Digital Illustration",
     canvas: "Art Paper",
     size: "8x10",
-    imageUrl: "../images/artwork2-resized.jpg",
+    imageUrl: "../project/images/artwork2-resized.png",
   },
   {
     title: "The Gym Trainer",
     medium: "Digital Illustration",
     canvas: "Digital Wallpaper",
     size: "mobile",
-    imageUrl: "../images/artwork3-resized.jpg",
+    imageUrl: "../project/images/artwork3-resized.png",
   },
   {
     title: "Tag Team Loriah",
     medium: "Digital Illustration",
     canvas: "Cardstock",
     size: "3x5",
-    imageUrl: "../images/artwork4-resized.jpg",
+    imageUrl: "../project/images/artwork4-resized.png",
   },
   {
     title: "The Ukulele Singer",
     medium: "Digital Illustration",
     canvas: "Sticker Paper",
     size: "4x5",
-    imageUrl: "../images/artwork5-resized.jpg",
+    imageUrl: "../project/images/artwork5-resized.png",
   },
   {
     title: "Eliza and Steve",
     medium: "colored pencil",
     canvas: "canvas",
     size: "8x10",
-    imageUrl: "../images/artwork7-resized.jpg",
+    imageUrl: "../project/images/artwork7-resized.png",
   },
   {
     title: "Tom and Anna",
     medium: "colored pencil",
     canvas: "canvas",
     size: "12x14",
-    imageUrl: "../images/artwork8-resized.jpg",
+    imageUrl: "../project/images/artwork8-resized.png",
   },
   {
     title: "Chibi Sailors",
     medium: "Digital Illustration",
     canvas: "canvas",
     size: "4x5",
-    imageUrl: "../images/artwork9-resized.jpg",
+    imageUrl: "../project/images/artwork9.png",
   },
   {
     title: "Dragonball 1",
     medium: "Digital Illustration",
     canvas: "canvas",
     size: "4x5",
-    imageUrl: "../images/artwork11-resized.jpg",
+    imageUrl: "../project/images/artwork11-resized.png",
   },
   {
     title: "Dragonball 2",
     medium: "Digital Illustration",
     canvas: "canvas",
     size: "4x5",
-    imageUrl: "../images/artwork12-resized.jpg",
+    imageUrl: "../project/images/artwork12-resized.png",
   },
 ];
 
@@ -120,7 +120,6 @@ function showDigital(artwork) {
 }
 
 function showTraditional(artwork) {
-  const yeardedicated = temple.dedicated.substring(0, 4);
   return artwork.medium !== "Digital Illustration";
 }
 
@@ -133,7 +132,7 @@ function showTraditional(artwork) {
 // }
 
 allAnchor = document.querySelector("#portfolio-all");
-digitalAnchor = document.querySelector("portfolio-digital");
+digitalAnchor = document.querySelector("#portfolio-digital");
 traditionalAnchor = document.querySelector("#portfolio-traditional");
 // largeAnchor = document.querySelector("#menu-large");
 // smallAnchor = document.querySelector("#menu-small");
@@ -155,4 +154,4 @@ traditionalAnchor.addEventListener("click", () => {
 // });
 
 console.log("hello world and goodbye");
-createArtCard(artwork);
+showArtwork(showAll);

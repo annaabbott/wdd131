@@ -1,7 +1,5 @@
 /* rules for default, mobile */
 
-/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"); */
-
 :root {
   --primary-color: #c0f6fd;
   --secondary-color: #f0bc73;
@@ -72,6 +70,30 @@ main p {
   justify-content: space-between;
   list-style-type: none;
   padding: 0 2rem;
+}
+
+form {
+  margin-left: 2rem;
+}
+
+legend {
+  padding: 2rem 1.5rem 0.25rem 0;
+}
+
+label {
+  font-size: 0.8rem;
+  display: block;
+  padding: 1rem 1.5rem 1rem 0;
+}
+
+input {
+  margin-left: 1rem;
+}
+
+input[type="submit"] {
+  background-color: var(--primary-color);
+  margin-bottom: 2rem;
+  border: 1px solid var(--text-color);
 }
 
 footer {

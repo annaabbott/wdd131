@@ -39,9 +39,58 @@
     <main>
       <h1>Contact the Artist</h1>
       <p>
-        If you'd like to order artwork, please visit my Etsy page:<span>
-        <a href="https://www.etsy.com/shop/canvasesbymaya">Canvases by Maya</a></span>
+        To order artwork, please visit my Etsy page:<span>
+          <a href="https://www.etsy.com/shop/canvasesbymaya"
+            >Canvases by Maya</a
+          ></span
+        >
       </p>
+      <form method="get" action="thanks.html" class="contactForm">
+        <label
+          >Your Name*<input type="text" id="fullname" name="fullName" required
+        /></label>
+
+        <label
+          >Your Email*<input type="email" id="email" name="email" required
+        /></label>
+
+        <legend>I have a question about (optional)</legend>
+        <label>
+          <input
+            type="checkbox"
+            id="purchase"
+            name="info"
+            value="purchase"
+          />Purchasing art
+        </label>
+        <label
+          ><input
+            type="checkbox"
+            id="custom"
+            name="info"
+            value="custom"
+          />Custom art/illustration</label
+        >
+        <label>
+          <input
+            type="checkbox"
+            id="techniques"
+            name="info"
+            value="techniques"
+          />Art techniques
+        </label>
+        <label>
+          <input type="checkbox" id="classes" name="info" value="ckasses" />
+          Art Classes
+        </label>
+
+        <label
+          >Message*
+          <textarea name="message" id="message" rows="5" cols="33"></textarea>
+        </label>
+
+        <input id="submitBtn" type="submit" value="Send my Message" />
+      </form>
     </main>
     <footer>
       <p>&copy; <span id="currentyear"> </span> Anna Abbott | Texas, USA</p>

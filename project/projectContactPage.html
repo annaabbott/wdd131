@@ -47,43 +47,43 @@
       </p>
       <form method="get" action="thanks.html" class="contactForm">
         <label
-          >Your Name*<input type="text" id="fullname" name="fullName" required
+          >Your Name*<input type="text" id="fullname" name="name" required
         /></label>
 
         <label
           >Your Email*<input type="email" id="email" name="email" required
         /></label>
-
-        <legend>I have a question about (optional)</legend>
-        <label>
-          <input
-            type="checkbox"
-            id="purchase"
-            name="info"
-            value="purchase"
-          />Purchasing art
-        </label>
-        <label
-          ><input
-            type="checkbox"
-            id="custom"
-            name="info"
-            value="custom"
-          />Custom art/illustration</label
-        >
-        <label>
-          <input
-            type="checkbox"
-            id="techniques"
-            name="info"
-            value="techniques"
-          />Art techniques
-        </label>
-        <label>
-          <input type="checkbox" id="classes" name="info" value="classes" />
-          Art Classes
-        </label>
-
+        <fieldset>
+          <legend>I have a question about (optional)</legend>
+          <label>
+            <input
+              type="checkbox"
+              id="purchase"
+              name="info"
+              value="purchase"
+            />Purchasing art
+          </label>
+          <label
+            ><input
+              type="checkbox"
+              id="custom"
+              name="info"
+              value="custom"
+            />Custom art/illustration</label
+          >
+          <label>
+            <input
+              type="checkbox"
+              id="techniques"
+              name="info"
+              value="techniques"
+            />Art techniques
+          </label>
+          <label>
+            <input type="checkbox" id="classes" name="info" value="classes" />
+            Art Classes
+          </label>
+        </fieldset>
         <label class="textBox"
           >Message*
           <textarea name="message" id="message" rows="5" cols="33"></textarea>

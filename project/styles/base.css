@@ -133,6 +133,14 @@ input[type="submit"] {
   display: block;
 }
 
+.thanks h2{
+  padding: 0 2rem;
+}
+
+.thanks p{
+  padding: 0 2rem;
+}
+
 footer {
   text-align: center;
   background-color: var(--primary-color);

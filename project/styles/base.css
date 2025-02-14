@@ -161,6 +161,14 @@ input[type="submit"] {
   border-radius: 0.3rem;
 }
 
+input:required{
+  border-left: 8px solid red;
+}
+
+input:valid{
+  border-left: 8px solid rgb(12, 175, 107);
+}
+
 .textBox {
   display: block;
 }

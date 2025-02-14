@@ -51,39 +51,47 @@
         /></label>
 
         <label
-          >Your Email*<input type="email" id="email" name="email" required
+          >Your Email*<input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="name@email.com"
         /></label>
+
         <fieldset>
-          <legend>I have a question about (optional)</legend>
-          <label>
+          <legend>Topic</legend>
+          <div>I have a question about (optional)</div>
+          <label class="checkboxLabel">
             <input
               type="checkbox"
               id="purchase"
               name="info"
-              value="purchase"
+              value="yes"
             />Purchasing art
           </label>
-          <label
+          <label class="checkboxLabel"
             ><input
               type="checkbox"
               id="custom"
-              name="info"
-              value="custom"
+              name="custom"
+              value="yes"
             />Custom art/illustration</label
           >
           <label>
             <input
+              class="checkboxLabel"
               type="checkbox"
               id="techniques"
-              name="info"
-              value="techniques"
+              name="techniques"
+              value="yes"
             />Art techniques
           </label>
-          <label>
-            <input type="checkbox" id="classes" name="info" value="classes" />
+          <label class="checkboxLabel">
+            <input type="checkbox" id="classes" name="classes" value="yes" />
             Art Classes
           </label>
         </fieldset>
+
         <label class="textBox"
           >Message*
           <textarea name="message" id="message" rows="5" cols="33"></textarea>

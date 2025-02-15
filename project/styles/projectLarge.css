@@ -1,27 +1,51 @@
 @media screen and (min-width: 640px) {
-  
-  :root{
+  :root {
     /* max-width: 850px; */
     margin: 0;
     width: 100%;
   }
 
-    header {
-        max-width: 100%;
-}
+  header {
+    max-width: 100%;
+  }
 
-.navigation {
+  .navigation {
     /* display: flex; */
     justify-content: space-around;
     /* list-style-type: none; */
     /* padding: 0 2rem; */
     color: var(--text-color);
-}
+  }
 
+  main {
+    padding: 0 8rem;
+  }
 
-footer {
+  .artworkFilter {
+    justify-content: space-around;
+    padding: 2rem 2rem;
+  }
+
+  #mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  #mainContainer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid var(--border-color);
+    border-radius: 0.3rem;
+    margin: 4rem 1rem;
+  }
+
+  #mainContainer p {
+    margin: 0;
+    padding: 1rem 0;
+  }
+
+  footer {
     max-width: 100%;
   }
-  
-
 }

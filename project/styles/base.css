@@ -12,7 +12,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -47,7 +46,7 @@ nav {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 
 ul {
@@ -59,12 +58,17 @@ a {
   color: var(--text-color);
 }
 
+main {
+  margin: 0 2rem;
+}
+
 main h1 {
   text-align: center;
+  padding-top: 3rem;
 }
 
 main p {
-  padding: 0 2rem;
+  padding: 0 2rem 2rem 0;
 }
 
 .artworkFilter {
@@ -181,6 +185,10 @@ input:valid {
 
 .thanks p {
   padding: 0 2rem;
+}
+
+.thanks img {
+  max-width: 350px;
 }
 
 footer {

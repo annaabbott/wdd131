@@ -123,14 +123,6 @@ function showTraditional(artwork) {
   return artwork.medium !== "Digital Illustration";
 }
 
-// function showSmall(temple) {
-//   return temple.area <= 10000;
-// }
-
-// function showLarge(temple) {
-//   return temple.area >= 90000;
-// }
-
 allAnchor = document.querySelector("#portfolio-all");
 digitalAnchor = document.querySelector("#portfolio-digital");
 traditionalAnchor = document.querySelector("#portfolio-traditional");
